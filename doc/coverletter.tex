@@ -1,0 +1,141 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Feiyang}{Chen}
+\position{Student{\enskip\cdotp\enskip}The University of Sydney}
+\address{Sydney, NSW, Australia}
+
+\mobile{(+61) 0419-600-786}
+\email{chris.chenfeiyang@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{https://FreeFlyingSheep.github.io}
+\github{FreeFlyingSheep}
+\linkedin{FreeFlyingSheep}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {ANZ}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for ANZ Graduate Program}
+% How the letter is opened
+\letteropening{Dear recruitment manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am writing to apply for the ANZ Graduate Program at ANZ.
+As a current student at the University of Sydney, I will be graduating in November 2025, and I am excited about the opportunity to start my professional career with your team.
+Through my academic studies, work experience, and contributions to open-source projects, I have gained valuable experience in software programming, cloud infrastructure, and collaborative development.
+
+I am excited about the opportunity to join ANZ's Technology stream because of the bank's focus on innovation and digital transformation.
+I am eager to contribute to the development of technology solutions that improve customer experiences and help address complex challenges.
+The Graduate Program offers the perfect environment to grow my skills and be part of a team shaping the future of banking.
+
+Thank you for considering my application.
+I look forward to hearing from you.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
