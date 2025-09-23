@@ -20,6 +20,8 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+\usepackage{xeCJK}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -44,6 +46,9 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \renewcommand{\acvSectionContentTopSkip}{3mm}
+\renewcommand{\acvHeaderNameDelim}{}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
 \renewcommand*{\cventry}[5]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
@@ -67,13 +72,13 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Feiyang}{Chen}
-\position{Student{\enskip\cdotp\enskip}The University of Sydney}
-\address{Sydney, NSW, Australia}
+\name{陈}{飞扬}
+\position{学生{\enskip\cdotp\enskip}悉尼大学}
+\address{澳大利亚，新南威尔士州，悉尼}
 
-\mobile{(+61) 0419-600-786}
+\mobile{(+86) 188-5297-8070}
 \email{chris.chenfeiyang@gmail.com}
-\dateofbirth{December 3rd, 1997}
+\dateofbirth{1997 年 12 月 3 日}
 \homepage{https://FreeFlyingSheep.github.io}
 \github{FreeFlyingSheep}
 % \linkedin{FreeFlyingSheep}
@@ -114,26 +119,27 @@
   %	CV/RESUME CONTENT
   %	Each section is imported separately, open each file in turn to modify content
   %-------------------------------------------------------------------------------
-  \input{resume/summary.tex}
+  \input{resume/summary-cn.tex}
   \vfill
-  \input{resume/skills.tex}
+  \input{resume/skills-cn.tex}
   \vfill
-  \input{resume/experience.tex}
+  \input{resume/experience-cn.tex}
   \vfill
-  % \input{resume/honors.tex}
+  % \input{resume/honors-cn.tex}
   % \vfill
-  % \input{resume/certificates.tex}
+  % \input{resume/certificates-cn.tex}
   % \vfill
-  % \input{resume/presentation.tex}
+  % \input{resume/presentation-cn.tex}
   % \vfill
-  \input{resume/projects.tex}
+  \input{resume/projects-cn.tex}
   \vfill
-  % \input{resume/committees.tex}
+  % \input{resume/committees-cn.tex}
   % \vfill
-  \input{resume/education.tex}
+  \input{resume/education-cn.tex}
   \vfill
-  % \input{resume/extracurricular.tex}
+  % \input{resume/extracurricular-cn.tex}
 }%
+
 
 %-------------------------------------------------------------------------------
 \end{document}
