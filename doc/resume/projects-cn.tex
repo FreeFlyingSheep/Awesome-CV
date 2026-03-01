@@ -12,7 +12,21 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
-    {Linux Kernel} % Title
+    {股票分析应用} % Title
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {基于 FastAPI、SQLAlchemy Async 和 PgQueuer 构建 A 股分析平台，抓取与分析任务异步化。}
+        \item {实现 YAML 规则引擎与 CNInfo/Yahoo 数据管道，具备重试、限流和缓存能力。}
+        \item {落地 LangGraph + RAG + SSE 聊天链路，并提供 Docker/K8s 部署与 OTel/Prometheus/Grafana 可观测性。}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {} % Role
+    {Linux 内核} % Title
     {} % Location
     {} % Date(s)
     {
@@ -25,31 +39,7 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
-    {klibc} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {为 klibc（轻量级 C 库）添加 LoongArch 支持。}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Kcov} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {为 Kcov（代码覆盖率分析工具）添加 LoongArch 支持。}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Valgrind for LoongArch64/Linux} % Title
+    {Valgrind（LoongArch64/Linux）} % Title
     {} % Location
     {} % Date(s)
     {
@@ -60,42 +50,17 @@
     }
 
 %---------------------------------------------------------
-  \cventry
+\cventry
     {} % Role
-    {OpenStack Nova \& Devstack for Fedora MIPS} % Title
+    {系统软件移植和工具开发（LoongArch / MIPS）} % Title
     {} % Location
     {} % Date(s)
     {
-      \begin{cvitems} % Description(s)
-        \item {为 OpenStack Nova（云计算管理平台）添加 MIPS 架构支持。}
-        \item {修改 Devstack 脚本以支持在 Fedora MIPS 上部署。}
+      \begin{cvitems}
+        \item {跨架构移植与平台适配：为 klibc、Kcov、RT-Thread 等组件增加/完善 LoongArch 支持，并完成硬件相关集成（如 LS2K0300）。}
+        \item {云与部署链路适配：为 OpenStack Nova 增加 MIPS 支持，并修改 Devstack 脚本以支持 Fedora MIPS 上的部署与验证。}
+        \item {开发效率工具：实现 LoongArch 汇编语法高亮 VSCode 插件，提升开发/调试体验。}
       \end{cvitems}
     }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {RT-Thread for LoongArch} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {为 RT-Thread（实时操作系统）添加 LoongArch 平台支持。}
-        \item {集成 LS2K0300 硬件支持。}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {LoongArch Assembly} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {开发了一个为 LoongArch 汇编语言提供语法高亮的 VSCode 插件。}
-      \end{cvitems}
-    }
-
 %---------------------------------------------------------
 \end{cventries}

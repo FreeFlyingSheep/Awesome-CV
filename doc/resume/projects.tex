@@ -12,6 +12,20 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
+    {Stock Analysis App} % Title
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {Built an A-share analysis platform with FastAPI, async SQLAlchemy, and PgQueuer for async crawl/analysis workflows.}
+        \item {Implemented YAML-based scoring rules with CNInfo/Yahoo ingestion, plus retry, rate limiting, and caching.}
+        \item {Delivered LangGraph + RAG + SSE chat, with Docker/Kubernetes deployment and OTel/Prometheus/Grafana observability.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {} % Role
     {Linux Kernel} % Title
     {} % Location
     {} % Date(s)
@@ -25,31 +39,7 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
-    {klibc} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Added LoongArch support to klibc, a lightweight C library.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Kcov} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Implemented LoongArch support for Kcov, enabling code coverage analysis for the architecture.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Valgrind for LoongArch64/Linux} % Title
+    {Valgrind (LoongArch64/Linux)} % Title
     {} % Location
     {} % Date(s)
     {
@@ -60,42 +50,17 @@
     }
 
 %---------------------------------------------------------
-  \cventry
-    {} % Role
-    {OpenStack Nova \& Devstack for Fedora MIPS} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Added MIPS architecture support for Loongson CPU in OpenStack Nova, enabling virtualization on Loongson hardware.}
-        \item {Modified Devstack scripts to support deployment on Fedora MIPS, facilitating development and testing.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {RT-Thread for LoongArch} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Added support for LoongArch platform in RT-Thread, a real-time operating system, ensuring compatibility with the architecture.}
-        \item {Integrated LS2K0300 hardware support, enabling RT-Thread to run on the LoongArch-based hardware.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {LoongArch Assembly} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Developed a VSCode extension providing syntax highlighting for LoongArch assembly language, enhancing code readability.}
-      \end{cvitems}
-    }
-
+\cventry
+  {} % Role
+  {System Software Porting \& Tooling (LoongArch / MIPS)} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {Cross-architecture porting \& platform bring-up: added/improved LoongArch support for klibc, Kcov, and RT-Thread, including hardware integration (e.g., LS2K0300).}
+      \item {Cloud \& deployment enablement: added MIPS support to OpenStack Nova and modified Devstack scripts to enable deployment and validation on Fedora MIPS.}
+      \item {Developer productivity tooling: built a VSCode extension providing syntax highlighting for LoongArch assembly to streamline development and debugging.}
+    \end{cvitems}
+  }
 %---------------------------------------------------------
 \end{cventries}
