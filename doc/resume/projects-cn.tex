@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{参与 \! 项目}
+\cvsection{参与\! 项目}
 
 
 %-------------------------------------------------------------------------------
@@ -12,40 +12,14 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
-    {股票分析应用} % Title
+    {股票分析 Demo（MVP）} % Title
     {} % Location
     {} % Date(s)
     {
       \begin{cvitems} % Description(s)
-        \item {基于 FastAPI、SQLAlchemy Async 和 PgQueuer 构建 A 股分析平台，抓取与分析任务异步化。}
+        \item {基于 FastAPI、SQLAlchemy Async 和 PgQueuer 构建 A 股分析 Demo（MVP），抓取与分析任务异步化。}
         \item {实现 YAML 规则引擎与 CNInfo/Yahoo 数据管道，具备重试、限流和缓存能力。}
-        \item {落地 LangGraph + RAG + SSE 聊天链路，并提供 Docker/K8s 部署与 OTel/Prometheus/Grafana 可观测性。}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Linux 内核} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {为 MIPS 架构提交补丁，修复 bug 并提高系统稳定性。}
-        \item {为 LoongArch 支持做出贡献，增强兼容性和功能。}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Valgrind（LoongArch64/Linux）} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {为 Valgrind（用于内存调试、性能分析和错误检测的工具）添加 LoongArch64 架构支持。}
-        \item {测试并确保 Valgrind 与 LoongArch64 Linux 平台的兼容性。}
+        \item {落地 LangGraph + RAG + SSE 聊天链路，结合 DeepEval 评估指标，并提供 Docker/K8s 部署与 OTel/Prometheus/Grafana 可观测性。}
       \end{cvitems}
     }
 
@@ -57,7 +31,7 @@
     {} % Date(s)
     {
       \begin{cvitems}
-        \item {跨架构移植与平台适配：为 klibc、Kcov、RT-Thread 等组件增加/完善 LoongArch 支持，并完成硬件相关集成（如 LS2K0300）。}
+        \item {跨架构内核与运行时适配：面向 MIPS/LoongArch 提交 Linux 内核补丁，并为 Valgrind 增加 LoongArch64 支持；同时为 klibc、Kcov、RT-Thread 等组件增加/完善 LoongArch 支持，并完成硬件相关集成（如 LS2K0300）。}
         \item {云与部署链路适配：为 OpenStack Nova 增加 MIPS 支持，并修改 Devstack 脚本以支持 Fedora MIPS 上的部署与验证。}
         \item {开发效率工具：实现 LoongArch 汇编语法高亮 VSCode 插件，提升开发/调试体验。}
       \end{cvitems}

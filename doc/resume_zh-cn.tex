@@ -48,12 +48,12 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\renewcommand{\acvSectionContentTopSkip}{3mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
 \renewcommand{\acvHeaderNameDelim}{}
 \renewcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
 \renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
 \renewcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
+  \vspace{-3.5mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -77,11 +77,11 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{陈}{飞扬}
 \position{学生{\enskip\cdotp\enskip}悉尼大学}
-\address{澳大利亚，新南威尔士州，悉尼}
+\address{中国，江苏，苏州}
 
 \mobile{(+86) 188-5297-8070}
 \email{chris.chenfeiyang@gmail.com}
-\dateofbirth{1997 年 12 月 3 日}
+\dateofbirth{1997 年}
 \homepage{https://FreeFlyingSheep.github.io}
 \github{FreeFlyingSheep}
 % \linkedin{FreeFlyingSheep}
@@ -123,11 +123,11 @@
   %	Each section is imported separately, open each file in turn to modify content
   %-------------------------------------------------------------------------------
   \input{resume/summary-cn.tex}
-  \vfill
+  \vspace{2mm}
   \input{resume/skills-cn.tex}
-  \vfill
+  \vspace{2mm}
   \input{resume/experience-cn.tex}
-  \vfill
+  \vspace{2mm}
   % \input{resume/honors-cn.tex}
   % \vfill
   % \input{resume/certificates-cn.tex}
@@ -135,11 +135,10 @@
   % \input{resume/presentation-cn.tex}
   % \vfill
   \input{resume/projects-cn.tex}
-  \vfill
+  \vspace{2mm}
   % \input{resume/committees-cn.tex}
   % \vfill
   \input{resume/education-cn.tex}
-  \vfill
   % \input{resume/extracurricular-cn.tex}
 }%
 

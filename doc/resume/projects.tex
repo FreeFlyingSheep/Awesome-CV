@@ -12,40 +12,14 @@
 %---------------------------------------------------------
   \cventry
     {} % Role
-    {Stock Analysis App} % Title
+    {Stock Analysis Demo (MVP)} % Title
     {} % Location
     {} % Date(s)
     {
       \begin{cvitems} % Description(s)
-        \item {Built an A-share analysis platform with FastAPI, async SQLAlchemy, and PgQueuer for async crawl/analysis workflows.}
+        \item {Built an A-share analysis demo (MVP) with FastAPI, async SQLAlchemy, and PgQueuer for async crawl/analysis workflows.}
         \item {Implemented YAML-based scoring rules with CNInfo/Yahoo ingestion, plus retry, rate limiting, and caching.}
-        \item {Delivered LangGraph + RAG + SSE chat, with Docker/Kubernetes deployment and OTel/Prometheus/Grafana observability.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Linux Kernel} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Submitted patches for MIPS architecture, fixing bugs and improving system stability.}
-        \item {Contributed to LoongArch support, enhancing compatibility and functionality.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Valgrind (LoongArch64/Linux)} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Added support for LoongArch64 architecture on Valgrind for memory debugging, profiling, and error detection.}
-        \item {Tested and ensured compatibility of Valgrind with the LoongArch64 Linux platform.}
+        \item {Delivered LangGraph + RAG + SSE chat with DeepEval metrics for quality assessment, Docker/Kubernetes deployment and OTel/Prometheus/Grafana observability.}
       \end{cvitems}
     }
 
@@ -57,7 +31,7 @@
   {} % Date(s)
   {
     \begin{cvitems}
-      \item {Cross-architecture porting \& platform bring-up: added/improved LoongArch support for klibc, Kcov, and RT-Thread, including hardware integration (e.g., LS2K0300).}
+      \item {Kernel \& runtime enablement across architectures: submitted Linux kernel patches for MIPS/LoongArch and added LoongArch64 support in Valgrind; also added/improved LoongArch support for klibc, Kcov, and RT-Thread, including hardware integration (e.g., LS2K0300).}
       \item {Cloud \& deployment enablement: added MIPS support to OpenStack Nova and modified Devstack scripts to enable deployment and validation on Fedora MIPS.}
       \item {Developer productivity tooling: built a VSCode extension providing syntax highlighting for LoongArch assembly to streamline development and debugging.}
     \end{cvitems}
