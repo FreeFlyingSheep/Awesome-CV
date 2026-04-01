@@ -10,30 +10,73 @@
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {} % Role
-    {Stock Analysis Demo (MVP)} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {Built an A-share analysis demo (MVP) with FastAPI, async SQLAlchemy, and PgQueuer for async crawl/analysis workflows.}
-        \item {Implemented YAML-based scoring rules with CNInfo/Yahoo ingestion, plus retry, rate limiting, and caching.}
-        \item {Delivered LangGraph + RAG + SSE chat with DeepEval metrics for quality assessment, Docker/Kubernetes deployment and OTel/Prometheus/Grafana observability.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
 \cventry
   {} % Role
-  {System Software Porting \& Tooling (LoongArch / MIPS)} % Title
+  {Stock Analysis Demo} % Title
   {} % Location
   {} % Date(s)
   {
     \begin{cvitems}
-      \item {Kernel \& runtime enablement across architectures: submitted Linux kernel patches for MIPS/LoongArch and added LoongArch64 support in Valgrind; also added/improved LoongArch support for klibc, Kcov, and RT-Thread, including hardware integration (e.g., LS2K0300).}
-      \item {Cloud \& deployment enablement: added MIPS support to OpenStack Nova and modified Devstack scripts to enable deployment and validation on Fedora MIPS.}
-      \item {Developer productivity tooling: built a VSCode extension providing syntax highlighting for LoongArch assembly to streamline development and debugging.}
+      \item {Built an A-share stock analysis demo with FastAPI, SQLAlchemy Async, and PgQueuer, making data ingestion, analysis, and task execution asynchronous as a basic backend pipeline for AI applications.}
+      \item {Implemented a YAML-based rule engine and integrated CNInfo and Yahoo Finance data pipelines with retry, rate limiting, and caching mechanisms.}
+      \item {Implemented an agent interaction workflow based on LangGraph + RAG + SSE, integrated tools through MCP, and added Redis, PostgreSQL, Docker/K8s, and observability with OTel/Prometheus/Grafana.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {Valgrind Porting and Adaptation} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {Added LoongArch64 support to Valgrind, including core component porting and translation of key instructions.}
+      \item {Followed implementation paths from other architectures to incrementally adapt runtime and system-related modules, and built regression tests for validation.}
+      \item {Diagnosed and fixed an immediate-value loading instruction issue under specific conditions by narrowing test cases and constructing minimal failing cases.}
+      \item {Completed the initial build within one week and reached an initially usable state within one month, passing hundreds of regression tests.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {OpenStack Porting and Deployment Adaptation} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {Contributed to MIPS support for OpenStack Nova and adapted the DevStack deployment workflow for deployment and validation on Fedora MIPS.}
+      \item {Started from existing x86 automated deployment scripts, decomposed the multi-component deployment process, and incrementally resolved key blocking points.}
+      \item {Fixed and validated compatibility and deployment issues of core components, bringing up the core service workflow within one month.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {System Software Adaptation and Tooling} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {Contributed Linux kernel patches and adapted system components including klibc, Kcov, and RT-Thread on LoongArch.}
+      \item {Participated in hardware-related integration work (e.g., LS2K0300), supporting software stack bring-up and debugging on target platforms.}
+      \item {Developed a VSCode syntax highlighting extension for LoongArch assembly to improve development and debugging efficiency.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {CI/CD Optimization for Documentation Collaboration} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {Designed and implemented a CI/CD workflow to address low review efficiency and limited preview capability in external documentation collaboration.}
+      \item {Enabled real-time PR previews and automatic contributor attribution, improving both community collaboration experience and internal review efficiency.}
+      \item {Helped establish a unified documentation collaboration workflow that received positive feedback from the community and was later adopted by other teams.}
     \end{cvitems}
   }
 %---------------------------------------------------------

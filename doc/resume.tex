@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[10pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -43,9 +43,10 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+\renewcommand{\acvSectionTopSkip}{0mm}
+\renewcommand{\acvSectionContentTopSkip}{1.2mm}
 \renewcommand*{\cventry}[5]{%
-  \vspace{-3.5mm}
+  \vspace{-2.8mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -59,6 +60,29 @@
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
   \end{tabular*}%
+}
+\renewenvironment{cvparagraph}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-1.2mm}
+  \paragraphstyle
+}{%
+  \par
+  \vspace{0.4mm}
+}
+\renewenvironment{cventries}{%
+  \vspace{\acvSectionContentTopSkip}
+  \begin{center}
+}{%
+  \end{center}
+}
+\renewenvironment{cvskills}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-0.8mm}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \tabularx{\textwidth}{r>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}X}
+}{%
+\endtabularx\par
 }
 
 %-------------------------------------------------------------------------------
@@ -74,7 +98,7 @@
 \mobile{(+86) 188-5297-8070}
 \email{chris.chenfeiyang@gmail.com}
 \dateofbirth{1997}
-\homepage{https://FreeFlyingSheep.github.io}
+\homepage{https://freeflyingsheep.github.io}
 \github{FreeFlyingSheep}
 % \linkedin{FreeFlyingSheep}
 % \gitlab{gitlab-id}
@@ -115,23 +139,14 @@
   %	Each section is imported separately, open each file in turn to modify content
   %-------------------------------------------------------------------------------
   \input{resume/summary.tex}
-  \vspace{2mm}
+  \vspace{0mm}
   \input{resume/skills.tex}
-  \vspace{2mm}
+  \vspace{0mm}
   \input{resume/experience.tex}
-  \vspace{2mm}
-  % \input{resume/honors.tex}
-  % \vfill
-  % \input{resume/certificates.tex}
-  % \vfill
-  % \input{resume/presentation.tex}
-  % \vfill
+  \vspace{0mm}
   \input{resume/projects.tex}
-  \vspace{2mm}
-  % \input{resume/committees.tex}
-  % \vfill
+  \vspace{0mm}
   \input{resume/education.tex}
-  % \input{resume/extracurricular.tex}
 }%
 
 %-------------------------------------------------------------------------------

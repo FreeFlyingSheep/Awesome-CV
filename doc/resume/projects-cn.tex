@@ -10,31 +10,74 @@
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {} % Role
-    {股票分析 Demo（MVP）} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems} % Description(s)
-        \item {基于 FastAPI、SQLAlchemy Async 和 PgQueuer 构建 A 股分析 Demo（MVP），抓取与分析任务异步化。}
-        \item {实现 YAML 规则引擎与 CNInfo/Yahoo 数据管道，具备重试、限流和缓存能力。}
-        \item {落地 LangGraph + RAG + SSE 聊天链路，结合 DeepEval 评估指标，并提供 Docker/K8s 部署与 OTel/Prometheus/Grafana 可观测性。}
-      \end{cvitems}
-    }
+\cventry
+  {} % Role
+  {股票分析 Demo} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {基于 FastAPI、SQLAlchemy Async 与 PgQueuer 构建 A 股分析 Demo，将数据抓取、分析和任务执行异步化，形成基础 AI 应用后端链路。}
+      \item {实现基于 YAML 的规则引擎，并接入 CNInfo 与 Yahoo Finance 数据管道，支持重试、限流与缓存机制。}
+      \item {完成 LangGraph + RAG + SSE 的智能体交互链路，结合 MCP 进行工具接入，并补充 Redis、PostgreSQL、Docker/K8s、OTel/Prometheus/Grafana 等部署与可观测能力。}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
 \cventry
-    {} % Role
-    {系统软件移植和工具开发（LoongArch / MIPS）} % Title
-    {} % Location
-    {} % Date(s)
-    {
-      \begin{cvitems}
-        \item {跨架构内核与运行时适配：面向 MIPS/LoongArch 提交 Linux 内核补丁，并为 Valgrind 增加 LoongArch64 支持；同时为 klibc、Kcov、RT-Thread 等组件增加/完善 LoongArch 支持，并完成硬件相关集成（如 LS2K0300）。}
-        \item {云与部署链路适配：为 OpenStack Nova 增加 MIPS 支持，并修改 Devstack 脚本以支持 Fedora MIPS 上的部署与验证。}
-        \item {开发效率工具：实现 LoongArch 汇编语法高亮 VSCode 插件，提升开发/调试体验。}
-      \end{cvitems}
-    }
+  {} % Role
+  {Valgrind 移植与适配} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {负责为 Valgrind 增加 LoongArch64 支持，完成核心组件移植与关键指令翻译。}
+      \item {参考其他架构实现路径，逐步适配运行时与系统相关模块，并构建回归测试进行验证。}
+      \item {通过缩小测试集与构造最小失败案例，定位并修复特定条件下的立即数加载指令错误。}
+      \item {1 周内完成基础构建，1 个月内达到初步可用状态，并通过上百个回归测试。}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {OpenStack 移植与部署适配} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {参与 OpenStack Nova 的 MIPS 支持与 DevStack 部署链路适配，支持 Fedora MIPS 上的部署与验证。}
+      \item {从 x86 自动化部署脚本入手，拆解多组件部署流程并逐步排查关键卡点。}
+      \item {针对关键组件的兼容性与部署问题进行修复和验证，在 1 个月内跑通核心服务链路。}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {系统软件适配与工具开发} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {参与 Linux 内核补丁提交，以及 klibc、Kcov、RT-Thread 等系统组件在 LoongArch 平台上的适配与验证。}
+      \item {参与硬件相关集成工作（如 LS2K0300），支持软件栈在目标平台上的运行与调试。}
+      \item {开发 LoongArch 汇编语法高亮 VSCode 插件，提升相关开发与调试效率。}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+\cventry
+  {} % Role
+  {文档协作流程 CI/CD 优化} % Title
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems}
+      \item {针对对外文档协作流程中审核效率低、社区预览不便的问题，设计并实现 CI/CD 流程。}
+      \item {支持 PR 实时预览与自动贡献者记录，提升社区协作体验与内部审核效率。}
+      \item {推动形成统一的对外文档协作原则，并在社区中取得良好反馈，后续被其他团队借鉴。}
+    \end{cvitems}
+  }
 %---------------------------------------------------------
 \end{cventries}
