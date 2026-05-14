@@ -509,14 +509,30 @@
   \newcommand*{\drawphoto}{%
     \ifthenelse{\isundefined{\@photo}}{}{%
       \newlength{\photodim}
+      \newlength{\photowidth}
+      \newlength{\photoheight}
       \ifthenelse{\equal{\@photoshape}{circle}}%
-        {\setlength{\photodim}{1.3cm}}%
-        {\setlength{\photodim}{1.8cm}}%
+        {%
+          \setlength{\photodim}{1.3cm}%
+          \setlength{\photowidth}{2.6cm}%
+          \setlength{\photoheight}{2.6cm}%
+        }%
+        {%
+          \setlength{\photodim}{1.8cm}%
+          \setlength{\photowidth}{3.6cm}%
+          \setlength{\photoheight}{3.6cm}%
+        }%
       \ifthenelse{\equal{\@photoedge}{edge}}%
         {\def\@photoborder{darkgray}}%
         {\def\@photoborder{none}}%
       \begin{tikzpicture}%
-        \node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill overzoom image=\@photo] () {};
+        \ifthenelse{\equal{\@photoshape}{circle}}{%
+          \node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill zoom image=\@photo] () {};
+        }{%
+          \node[rectangle, draw=\@photoborder, line width=0.3mm, inner sep=0pt] () {%
+            \includegraphics[width=\photowidth,height=\photoheight,keepaspectratio]{\@photo}%
+          };
+        }%
       \end{tikzpicture}
     }%
   }
@@ -563,7 +579,8 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \faAlt{DoB: \@dateofbirth}{\faCakeCandles}{\@dateofbirth}%
+          \faAlt{DoB: \@dateofbirth}{\faCakeCandles}{\@dateofbirth}\\%
+          \setbool{isstart}{true}%
         }%
       \ifthenelse{\isundefined{\@homepage}}%
         {}%
