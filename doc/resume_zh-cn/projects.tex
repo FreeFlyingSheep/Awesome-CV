@@ -10,44 +10,44 @@
 \begin{cventries}
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {AI 智能体新闻校对系统} % Title
-  {} % Location
-  {} % Date(s)
+  {}
+  {AI 智能体新闻校对系统}
+  {}
+  {}
   {
     \begin{cvitems}
-      \item {设计并开发可嵌入页面的 AI 内容校对编辑器 SDK（前端 Vue 实现），提升新闻校对效率与一致性。}
-      \item {构建基于 FastAPI、SQLAlchemy 与 LangChain 的新闻智能体，实现本地新闻库事实检索及自动生成修改建议，支持高效内容审核。}
-      \item {在测试阶段将 Qwen 大模型本地部署，并通过 Langfuse 实现智能体交互监控，以验证系统可控性与性能指标。}
+      \item {设计可嵌入业务页面的 Vue 校对编辑器 SDK，实现文本编辑、问题定位与修改建议展示。}
+      \item {构建 FastAPI、SQLAlchemy、LangChain 新闻校对 Agent，完成本地新闻库事实检索、上下文构造与建议生成。}
+      \item {实现异步任务与错误处理，并通过本地 Qwen、Langfuse 验证调用链路可控性及调试效率。}
     \end{cvitems}
   }
 
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {A 股股票分析 Demo} % Title
-  {} % Location
-  {} % Date(s)
+  {}
+  {A 股股票分析 Agent Demo}
+  {}
+  {}
   {
     \begin{cvitems}
-      \item {搭建异步化数据抓取与分析后端（FastAPI + SQLAlchemy + PgQueuer），形成基础 AI 应用链路。}
-      \item {实现基于 YAML 的规则引擎，并接入 CNInfo 与 Yahoo Finance 数据管道，支持重试、限流与缓存机制。}
-      \item {完成 LangGraph + RAG + SSE 智能体交互链路，结合 MCP 工具接入与 Redis/PostgreSQL/Docker/K8s 部署支持，并通过 OTel/Prometheus/Grafana 强化可观测性。}
+      \item {基于 FastAPI、SQLAlchemy、PgQueuer 搭建异步数据采集、任务调度与分析链路。}
+      \item {实现 YAML 规则引擎及 CNInfo、Yahoo Finance 数据管道，支持重试、限流、缓存与结构化处理。}
+      \item {构建 LangGraph + RAG + SSE 多步骤分析与流式交互，接入 MCP 工具；集成 Redis、PostgreSQL、Docker/K8s 及 OTel/Prometheus/Grafana 可观测性栈。}
     \end{cvitems}
   }
 
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {系统软件适配与工具开发} % Title
-  {} % Location
-  {} % Date(s)
+  {}
+  {系统软件适配与工具开发}
+  {}
+  {}
   {
     \begin{cvitems}
-      \item {为 Valgrind 添加 LoongArch64 支持，完成核心组件移植与关键指令翻译，1 个月内实现初步可用并通过上百个回归测试。}
-      \item {参与 Linux 内核及 klibc、Kcov、RT-Thread 等系统组件在 LoongArch 平台上的适配与验证，支持 LS2K0300 等硬件集成。}
-      \item {完成 OpenStack Nova MIPS 支持与 DevStack 部署链路适配，解决关键组件兼容性问题，1 个月内跑通核心服务链路。}
-      \item {设计并实现文档协作 CI/CD 流程，支持实时 PR 预览与贡献者自动归因，提升审核效率与社区协作体验。}
+      \item {为 Valgrind 添加 LoongArch64 支持，完成核心组件移植、关键指令翻译与运行时验证，1 个月内达到初步可用并通过上百项回归测试。}
+      \item {适配 Linux 内核、klibc、Kcov、RT-Thread 等组件并支持 LS2K0300 集成，覆盖底层库、测试工具、RTOS 与硬件平台。}
+      \item {完成 OpenStack Nova/DevStack 的 Fedora MIPS 适配，1 个月内跑通核心服务链路。}
+      \item {设计文档协作 CI/CD，支持实时 PR 预览与贡献者自动归因，提升审核及社区协作效率。}
     \end{cvitems}
   }
 
