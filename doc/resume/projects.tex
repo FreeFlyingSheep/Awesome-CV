@@ -10,41 +10,43 @@
 \begin{cventries}
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {AI News Proofreading Agent} % Title
-  {} % Location
-  {} % Date(s)
+  {Software Engineer (Project Collaboration)} % Role
+  {Suzhou Xinsu Newspaper Network Technology Co., Ltd.} % Title
+  {Suzhou, Jiangsu, China} % Location
+  {Apr. 2026 -- Aug. 2026} % Date(s)
   {
     \begin{cvitems}
-      \item {Designed an embeddable Vue proofreading SDK for text editing, issue localisation, and revision suggestions.}
-      \item {Built a FastAPI/SQLAlchemy/LangChain agent for local-corpus retrieval, context construction, and revision generation.}
-      \item {Added asynchronous execution and error handling; validated traces with local Qwen and Langfuse.}
+      \item {\textbf{News Proofreading Agent (Apr.--May, independent):} Owned requirements, architecture, and end-to-end delivery; built a Vue editor SDK and FastAPI/SQLAlchemy/LangChain backend for agent orchestration, fact retrieval, and revision generation.}
+      \item {Deployed Qwen locally, designed asynchronous execution and error handling, and used Langfuse to trace model calls, task states, and end-to-end workflows.}
+      \item {\textbf{Industrial Drawing/Circuit-Diagram Recognition:} Reproduced research methods and contributed to data annotation, training, and evaluation of YOLO, UNet, and HRNet models.}
+      \item {\textbf{Suzhou News Administration System (Jun.--Aug., two-person team):} Owned the full-stack RuoYi-Vue-Plus (Spring Boot/Vue 3) administration system and integration with the public portal.}
+      \item {Implemented multi-tenant content management, video compression, legacy data migration, third-party synchronization, and scheduled static-site builds.}
     \end{cvitems}
   }
 
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {A-Share Stock Analysis Agent Demo} % Title
-  {} % Location
-  {} % Date(s)
+  {Software Engineer (Personal Open-source Project)} % Role
+  {\href{https://github.com/FreeFlyingSheep/stock-analysis}{A-Share Fundamental Analysis Agent}} % Title
+  {Suzhou, Jiangsu, China} % Location
+  {Feb. 2026 -- Mar. 2026} % Date(s)
   {
     \begin{cvitems}
-      \item {Built asynchronous ingestion, scheduling, and analysis with FastAPI, SQLAlchemy, and PgQueuer.}
-      \item {Implemented YAML rules and CNInfo/Yahoo Finance pipelines with retry, rate limiting, and caching.}
-      \item {Built LangGraph + RAG + SSE analysis with MCP tools; integrated Redis/PostgreSQL, Docker/K8s, and OTel/Prometheus/Grafana.}
+      \item {Built an A-share scoring and Q\&A system with FastAPI, SQLAlchemy, and PgQueuer, including CNInfo/Yahoo Finance ingestion, asynchronous scheduling, and declarative YAML scoring rules.}
+      \item {Implemented a streaming LangGraph + RAG + SSE pipeline with MCP, PostgreSQL/pgvector, and MinIO; added DeepEval offline regression suites for RAG, agent, and end-to-end workflows.}
+      \item {Validated dependencies with pytest/Testcontainers; provided Docker Compose and Kustomize/Minikube deployment configurations and integrated OTel, Prometheus, Grafana, Loki, and Tempo.}
     \end{cvitems}
   }
 
 %---------------------------------------------------------
 \cventry
-  {} % Role
-  {System Software Adaptation and Tooling} % Title
-  {} % Location
-  {} % Date(s)
+  {Kernel Engineer} % Role
+  {Systems Software and Open-source Contributions} % Title
+  {Suzhou, Jiangsu, China} % Location
+  {Jun. 2020 -- Aug. 2023} % Date(s)
   {
     \begin{cvitems}
-      \item {Added LoongArch64 support to Valgrind; reached initial usability in one month and passed hundreds of regression tests.}
+      \item {\href{https://github.com/FreeFlyingSheep/valgrind-loongarch64}{Added LoongArch64/Linux support to Valgrind}; completed core porting, instruction translation, and runtime validation, reaching initial usability in one month and passing hundreds of regression tests.}
       \item {Adapted Linux, klibc, Kcov, and RT-Thread for LoongArch and supported LS2K0300 integration.}
       \item {Enabled OpenStack Nova/DevStack on Fedora MIPS and brought up the core service workflow within one month.}
       \item {Designed documentation CI/CD with live PR previews and automatic contributor attribution.}

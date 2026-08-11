@@ -21,7 +21,7 @@
 \documentclass[10pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.0cm, top=.8cm, right=1.0cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.0cm, top=.8cm, right=1.0cm, bottom=1.4cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -45,6 +45,14 @@
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \renewcommand{\acvSectionTopSkip}{0mm}
 \renewcommand{\acvSectionContentTopSkip}{1.2mm}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{7.2pt}{1em}\headerfont\color{text} #1}}
+\renewcommand*{\paragraphstyle}{\fontsize{9.2pt}{1em}\bodyfontlight\upshape\color{text}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8.2pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{8.2pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\color{text} #1}}
 \renewcommand*{\cventry}[5]{%
   \vspace{-2.8mm}
   \setlength\tabcolsep{0pt}
@@ -92,14 +100,14 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{Feiyang}{Chen}
-\position{Master of Computer Science{\enskip\cdotp\enskip}The University of Sydney}
+\position{Backend \& AI Application Engineer}
 \address{Suzhou, Jiangsu, China}
 
 \mobile{(+86) 188-5297-8070}
 \email{chris.chenfeiyang@gmail.com}
-\dateofbirth{1997}
-\homepage{https://freeflyingsheep.github.io}
-\github{FreeFlyingSheep}
+% \dateofbirth{1997}
+% \homepage{https://freeflyingsheep.github.io}
+% \github{FreeFlyingSheep}
 % \linkedin{FreeFlyingSheep}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -113,7 +121,13 @@
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
+\extrainfo{\href{https://github.com/FreeFlyingSheep}{GitHub / Open Source \faSquareGithub\ FreeFlyingSheep}\quad\textbar\quad\href{https://freeflyingsheep.github.io/posts}{Technical Blog \faHouseChimney\ freeflyingsheep.github.io}}
+\hypersetup{
+  pdftitle={Feiyang Chen - Backend and AI Application Engineer},
+  pdfauthor={Feiyang Chen},
+  pdfsubject={Resume for backend engineering, AI application engineering, and software engineering roles},
+  pdfkeywords={AI application engineer, backend engineer, software engineer, Python, FastAPI, REST API, Java, Spring Boot, large language model, LLM, LangChain, LangGraph, retrieval-augmented generation, RAG, Model Context Protocol, MCP, PostgreSQL, Docker, Kubernetes, Linux}
+}
 
 % \quote{``Be the change that you want to see in the world."}
 
@@ -142,9 +156,9 @@
   \vspace{0mm}
   \input{resume/skills.tex}
   \vspace{0mm}
-  \input{resume/experience.tex}
-  \vspace{0mm}
   \input{resume/projects.tex}
+  \vspace{0mm}
+  \input{resume/experience.tex}
   \vspace{0mm}
   \input{resume/education.tex}
 }%

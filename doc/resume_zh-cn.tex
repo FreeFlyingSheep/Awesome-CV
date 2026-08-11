@@ -26,7 +26,7 @@
 \setCJKmainfont{PingFang SC}
 
 % Configure page margins with geometry
-\geometry{left=1.0cm, top=.8cm, right=1.0cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.0cm, top=.8cm, right=1.0cm, bottom=1.4cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -53,6 +53,14 @@
 \renewcommand{\acvHeaderNameDelim}{}
 \renewcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
 \renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{7.2pt}{1em}\headerfont\color{text} #1}}
+\renewcommand*{\paragraphstyle}{\fontsize{9.2pt}{1em}\bodyfontlight\upshape\color{text}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8.2pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{8.2pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\color{text} #1}}
 \renewcommand*{\cventry}[5]{%
   \vspace{-2.8mm}
   \setlength\tabcolsep{0pt}
@@ -100,14 +108,14 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./photo.jpg}
 \name{陈}{飞扬}
-\position{计算机科学硕士{\enskip\cdotp\enskip}悉尼大学}
+\position{后端与 AI 应用软件工程师}
 \address{中国，江苏，苏州}
 
 \mobile{(+86) 188-5297-8070}
 \email{chris.chenfeiyang@gmail.com}
 \dateofbirth{1997 年}
-\homepage{https://freeflyingsheep.github.io}
-\github{FreeFlyingSheep}
+% \homepage{https://freeflyingsheep.github.io}
+% \github{FreeFlyingSheep}
 % \linkedin{FreeFlyingSheep}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -121,7 +129,13 @@
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
+\extrainfo{\href{https://github.com/FreeFlyingSheep}{GitHub 开源项目 \faSquareGithub\ FreeFlyingSheep}\quad\textbar\quad\href{https://freeflyingsheep.github.io/posts}{个人技术博客 \faHouseChimney\ freeflyingsheep.github.io}}
+\hypersetup{
+  pdftitle={陈飞扬 - 后端与 AI 应用软件工程师},
+  pdfauthor={陈飞扬},
+  pdfsubject={后端开发、AI 应用开发与软件工程求职简历},
+  pdfkeywords={AI 应用开发, 后端开发, 软件工程, Python, FastAPI, REST API, Java, Spring Boot, 大语言模型, LLM, LangChain, LangGraph, 检索增强生成, RAG, 模型上下文协议, MCP, PostgreSQL, Docker, Kubernetes, Linux}
+}
 
 % \quote{``Be the change that you want to see in the world."}
 
@@ -150,9 +164,9 @@
   \vspace{0mm}
   \input{resume_zh-cn/skills.tex}
   \vspace{0mm}
-  \input{resume_zh-cn/experience.tex}
-  \vspace{0mm}
   \input{resume_zh-cn/projects.tex}
+  \vspace{0mm}
+  \input{resume_zh-cn/experience.tex}
   \vspace{0mm}
   \input{resume_zh-cn/education.tex}
 }%
