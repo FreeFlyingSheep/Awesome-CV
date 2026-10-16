@@ -10,19 +10,19 @@
 \begin{cventries}
 %---------------------------------------------------------
 \cventry
-  {核心开发者（项目合作；开发及持续维护）}
+  {项目协作开发者｜服务单位：苏州新苏报业网络科技有限公司}
   {新闻智能校对与内容管理项目}
   {中国，江苏省，苏州市}
   {2026 年 4 月 -- 至今}
   {
     \begin{cvitems}
-      \item {\textbf{智能校对：}独立负责 FastAPI/LangChain 新闻校对服务的需求分析、架构设计、开发交付与持续维护，支持语言及事实一致性校对。}
-      \item {构建新闻采集、实体与任职关系抽取、PostgreSQL 事实检索链路，支持实体别名匹配并按更新时间整理证据；通过提示词约束动态事实校对必须依据检索结果。}
-      \item {针对模型输出无法准确定位原文的问题，结合 Pydantic 结构校验与原文片段唯一性检查，向模型反馈校验错误并重试，同时限制模型及工具调用轮数。}
-      \item {开发编辑器 SDK，支持建议接受/拒绝及保留 Markdown/HTML 结构的修改回写；通过 FastMCP 接入 WorkBuddy，完成 JWT 鉴权、请求限流及调用额度扣减与执行前失败退还的对接。}
-      \item {本地部署 Qwen，实现 Taskiq/Redis 异步入库、请求去重与结果缓存，接入 Langfuse 跟踪调用链路；编写 pytest/Testcontainers 与 Vitest 测试，覆盖事实检索、输出校验、去重及修改回写。}
-      \item {\textbf{业务系统：}在团队中负责内容管理端前后端开发及门户联调，完成多租户内容管理、旧数据迁移、第三方数据同步与发布调度。}
-      \item {\textbf{个人开源技术验证：}另以\href{https://github.com/FreeFlyingSheep/stock-analysis}{A 股分析 Agent} 实践 LangGraph 路由与问题改写、BM25/向量混合检索及 RRF 融合，以 DeepEval 评估回答忠实度与工具调用；配套撰写\href{https://freeflyingsheep.github.io/posts/ai/agent/demo/}{架构选型与实践复盘}。}
+      \item {\textbf{智能校对：}独立开发并维护 FastAPI/LangChain 新闻校对服务，支持语言与事实一致性校对；供集团内部记者使用，日均调用上百次。}
+      \item {\textbf{事实检索：}搭建新闻采集、实体与任职关系抽取及 PostgreSQL 检索链路，结合实体别名匹配与证据更新时间，为时效性新闻事实校对提供可追溯依据。}
+      \item {\textbf{输出校验：}通过 Pydantic 与原文片段唯一性检查校验建议格式及定位，反馈错误重试，并限制模型与工具调用轮数。}
+      \item {\textbf{编辑器与 MCP：}开发 SDK，支持建议接受/拒绝及保留 Markdown/HTML 结构回写；通过 FastMCP 接入 WorkBuddy，对接 JWT 鉴权、限流、额度扣减及执行前失败退还。}
+      \item {\textbf{运行与测试：}本地部署 Qwen，使用 Taskiq/Redis 实现异步入库、请求去重与结果缓存；接入 Langfuse 调用跟踪，以 pytest/Testcontainers 与 Vitest 覆盖检索、校验、去重及回写。}
+      \item {\textbf{业务系统：}在团队中负责内容管理前后端开发与门户联调，完成多租户管理、旧数据迁移、第三方同步与发布调度。}
+      \item {\textbf{个人技术验证：}基于独立开源项目\href{https://github.com/FreeFlyingSheep/stock-analysis}{A 股分析 Agent}，验证 LangGraph 路由与问题改写、BM25/向量混合检索及 RRF 融合；使用 DeepEval 评估回答忠实度与工具调用，撰写\href{https://freeflyingsheep.github.io/posts/ai/agent/demo/}{架构选型与实践复盘}。}
     \end{cvitems}
   }
 
@@ -31,12 +31,12 @@
   {内核与系统软件开发（含后续开源维护）}
   {系统软件与开源贡献}
   {中国，江苏省，苏州市}
-  {2020 年 -- 2025 年}
+  {2020 年 6 月 -- 2025 年 2 月}
   {
     \begin{cvitems}
-      \item {\href{https://github.com/FreeFlyingSheep/valgrind-loongarch64}{为 Valgrind 添加 LoongArch64/Linux 支持}，参与 libVEX 整数、浮点及向量指令翻译与运行时适配；1 个月内达到初步可用，通过上百项回归测试，并补充平台测试与夜间测试配置。}
-      \item {参与 Linux 系统调用及网卡驱动移植；\href{https://github.com/FreeFlyingSheep/linux/commit/73f12c6da77a7c25cf0a8f1a3c282db2a1e2bd93}{为 nolibc 添加 LoongArch32/64 支持}，完成 statx 兼容适配与 selftests 平台支持。}
-      \item {为\href{https://github.com/FreeFlyingSheep/rt-thread}{RT-Thread} 添加 LoongArch 与 QEMU 平台支持，参与 LS2K0300 集成；完成\href{https://github.com/FreeFlyingSheep/newlib}{Newlib} 移植及\href{https://github.com/FreeFlyingSheep/kcov/commit/02bc582371c5ff5f4b4781975c2c12f9744b4162}{Kcov 的 LoongArch 架构支持}。}
+      \item {维护\href{https://github.com/FreeFlyingSheep/valgrind-loongarch64}{Valgrind LoongArch64/Linux 独立分支}，独立完成 libVEX 基础指令集与运行时适配，参与向量指令集适配；1 个月内实现初步可用，通过上百项回归测试，补充平台与夜间 CI 测试配置，推动底层工具链对国产 LoongArch 架构的兼容。}
+      \item {参与 Linux 系统调用及网卡驱动移植；\href{https://github.com/FreeFlyingSheep/linux/commit/73f12c6da77a7c25cf0a8f1a3c282db2a1e2bd93}{为 nolibc 添加 LoongArch32/64 支持}，完成 statx 兼容适配与 selftests 平台支持，已合入 Linux 主线；\href{https://github.com/FreeFlyingSheep/kcov/commit/02bc582371c5ff5f4b4781975c2c12f9744b4162}{为 Kcov 添加 LoongArch 架构支持}，已合入上游。}
+      \item {在独立维护分支中为\href{https://github.com/FreeFlyingSheep/rt-thread}{RT-Thread} 添加 LoongArch 与 QEMU 平台支持，参与 LS2K0300 集成，并完成\href{https://github.com/FreeFlyingSheep/newlib}{Newlib} 移植。}
     \end{cvitems}
   }
 
