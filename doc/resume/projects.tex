@@ -10,46 +10,33 @@
 \begin{cventries}
 %---------------------------------------------------------
 \cventry
-  {Software Engineer (Project Collaboration)} % Role
-  {Suzhou Xinsu Newspaper Network Technology Co., Ltd.} % Title
+  {Core Developer (Project Collaboration; Development and Maintenance)} % Role
+  {News Proofreading and Content Management} % Title
   {Suzhou, Jiangsu, China} % Location
-  {Apr. 2026 -- Aug. 2026} % Date(s)
+  {Apr. 2026 -- Present} % Date(s)
   {
     \begin{cvitems}
-      \item {\textbf{News Proofreading Agent (Apr.--May, independent):} Owned requirements, architecture, and end-to-end delivery; built a Vue editor SDK and FastAPI/SQLAlchemy/LangChain backend for agent orchestration, fact retrieval, and revision generation.}
-      \item {Deployed Qwen locally, designed asynchronous execution and error handling, and used Langfuse to trace model calls, task states, and end-to-end workflows.}
-      \item {\textbf{Industrial Drawing/Circuit-Diagram Recognition:} Reproduced research methods and contributed to data annotation, training, and evaluation of YOLO, UNet, and HRNet models.}
-      \item {\textbf{Suzhou News Administration System (Jun.--Aug., two-person team):} Owned the full-stack RuoYi-Vue-Plus (Spring Boot/Vue 3) administration system and integration with the public portal.}
-      \item {Implemented multi-tenant content management, video compression, legacy data migration, third-party synchronization, and scheduled static-site builds.}
+      \item {\textbf{AI Proofreading:} Independently owned requirements, architecture, delivery, and ongoing maintenance of a FastAPI/LangChain service for language and factual-consistency checks on news articles.}
+      \item {Built a pipeline for news ingestion, entity and appointment extraction, and PostgreSQL fact retrieval, with alias matching and evidence ordered by recency; instructed the agent to ground dynamic factual corrections in retrieved evidence.}
+      \item {Combined Pydantic schemas with source-span and replacement validation; fed errors back to the model for retries and bounded model/tool calls to handle invalid or unlocatable suggestions.}
+      \item {Built an editor SDK for accepting/rejecting suggestions and applying edits while preserving Markdown/HTML structure; exposed proofreading to WorkBuddy through FastMCP, integrating JWT authentication, rate limits, quota consumption, and refunds for pre-execution failures.}
+      \item {Deployed Qwen locally and built Taskiq/Redis ingestion, deduplication, caching, and Langfuse tracing; added pytest/Testcontainers and Vitest tests for retrieval, output validation, deduplication, and edit application.}
+      \item {\textbf{Business System:} Owned administration frontend/backend development and portal integration in a team, covering multi-tenant content management, legacy data migration, third-party synchronization, and publishing schedules.}
+      \item {\textbf{Personal Open-source Validation:} Built an \href{https://github.com/FreeFlyingSheep/stock-analysis}{A-share analysis agent} with LangGraph routing/query rewriting and BM25/vector retrieval fused by RRF; evaluated faithfulness and tool use with DeepEval and documented \href{https://freeflyingsheep.github.io/posts/ai/agent/demo/}{architecture choices and lessons learned}.}
     \end{cvitems}
   }
 
 %---------------------------------------------------------
 \cventry
-  {Software Engineer (Personal Open-source Project)} % Role
-  {\href{https://github.com/FreeFlyingSheep/stock-analysis}{A-Share Fundamental Analysis Agent}} % Title
-  {Suzhou, Jiangsu, China} % Location
-  {Feb. 2026 -- Mar. 2026} % Date(s)
-  {
-    \begin{cvitems}
-      \item {Built an A-share scoring and Q\&A system with FastAPI, SQLAlchemy, and PgQueuer, including CNInfo/Yahoo Finance ingestion, asynchronous scheduling, and declarative YAML scoring rules.}
-      \item {Implemented a streaming LangGraph + RAG + SSE pipeline with MCP, PostgreSQL/pgvector, and MinIO; added DeepEval offline regression suites for RAG, agent, and end-to-end workflows.}
-      \item {Validated dependencies with pytest/Testcontainers; provided Docker Compose and Kustomize/Minikube deployment configurations and integrated OTel, Prometheus, Grafana, Loki, and Tempo.}
-    \end{cvitems}
-  }
-
-%---------------------------------------------------------
-\cventry
-  {Kernel Engineer} % Role
+  {Kernel and Systems Development (Including Open-source Maintenance)} % Role
   {Systems Software and Open-source Contributions} % Title
   {Suzhou, Jiangsu, China} % Location
-  {Jun. 2020 -- Aug. 2023} % Date(s)
+  {2020 -- 2025} % Date(s)
   {
     \begin{cvitems}
-      \item {\href{https://github.com/FreeFlyingSheep/valgrind-loongarch64}{Added LoongArch64/Linux support to Valgrind}; completed core porting, instruction translation, and runtime validation, reaching initial usability in one month and passing hundreds of regression tests.}
-      \item {Adapted Linux, klibc, Kcov, and RT-Thread for LoongArch and supported LS2K0300 integration.}
-      \item {Enabled OpenStack Nova/DevStack on Fedora MIPS and brought up the core service workflow within one month.}
-      \item {Designed documentation CI/CD with live PR previews and automatic contributor attribution.}
+      \item {\href{https://github.com/FreeFlyingSheep/valgrind-loongarch64}{Added LoongArch64/Linux support to Valgrind}, contributing libVEX integer, floating-point, and vector instruction translation and runtime support; reached initial usability in one month, passed hundreds of regression tests, and added platform/nightly test configurations.}
+      \item {Contributed to Linux system call and network driver porting; \href{https://github.com/FreeFlyingSheep/linux/commit/73f12c6da77a7c25cf0a8f1a3c282db2a1e2bd93}{added LoongArch32/64 support to nolibc}, statx compatibility, and platform selftests.}
+      \item {Added LoongArch and QEMU platform support to \href{https://github.com/FreeFlyingSheep/rt-thread}{RT-Thread} and supported LS2K0300 integration; ported \href{https://github.com/FreeFlyingSheep/newlib}{Newlib} and added \href{https://github.com/FreeFlyingSheep/kcov/commit/02bc582371c5ff5f4b4781975c2c12f9744b4162}{LoongArch support to Kcov}.}
     \end{cvitems}
   }
 %---------------------------------------------------------
